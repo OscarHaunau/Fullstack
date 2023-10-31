@@ -1,0 +1,48 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+
+}
+
+body{
+    font-size: 16px; /* 1rem = 10px */
+    font-family: montserrat,Sans-serif;
+
+}
+ 
+img {
+    width: 20rem;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.nav-bar a {
+    text-align: center;
+    text-decoration:none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.nav-bar a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+@media (min-width: 768px){
+    .nav-bar{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.search-bar {
+        margin: 1rem;
+    }
+}

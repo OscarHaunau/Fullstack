@@ -10,6 +10,7 @@ html{
 body{
     font-size: 16px; /* 1rem = 10px */
     font-family: montserrat,Sans-serif;
+    background-color: rgb(255, 255, 255);
 
 }
  
@@ -20,6 +21,7 @@ img {
 .nav-bar {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     padding: 1rem;
 }
 
@@ -32,8 +34,9 @@ img {
 }
 
 .nav-bar a:hover{
-    background-color: yellow;
-    color: black;
+    background-color: rgb(235, 235, 81);
+    border: solid 1px white;
+    color: white;
 }
 
 @media (min-width: 768px){
@@ -45,4 +48,22 @@ img {
     div.search-bar {
         margin: 1rem;
     }
+}
+
+/* Lo sig es lo visto en clase*/
+
+li {
+    border: solid 1px black;
+    padding: 2rem;
+    text-align: center;
+    list-style: none;
+}
+
+.clientes {
+    display: flex;
+    flex-direction: row; /* en lugar de usar el ul ; li en clientes.html usar un div class=cliente y usar el flex para ordenarlos  */
+}
+
+h1 h2 {
+    text-align: center;
 }
